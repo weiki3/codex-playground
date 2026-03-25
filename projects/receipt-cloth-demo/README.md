@@ -1,3 +1,8 @@
-# Receipt Cloth Demo (Archived)
+# Receipt Cloth Demo
 
-The original receipt cloth simulation can be restored into this folder to keep root clean.
+Interactive Three.js cloth simulation of a hanging supermarket receipt.
+
+## Notes
+
+- This project is now **active** and registered in `projects/registry.json`.
+- Open `index.html` in this folder (via local server) to run it.
