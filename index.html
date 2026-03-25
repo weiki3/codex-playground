@@ -3,17 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hanging Receipt Cloth Simulation</title>
+    <title>Codex Vibe Lab Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <canvas id="scene"></canvas>
+    <div class="grain"></div>
+    <main class="portal">
+      <header class="hero">
+        <p class="eyebrow">Codex Playground</p>
+        <h1>Vibe Coding Project Navigator</h1>
+        <p class="subtitle">
+          Minimal, fast, and organized. Track every project, open any idea, and keep Codex aligned on
+          where code belongs.
+        </p>
+      </header>
 
-    <div class="hud">
-      <h1>Supermarket Receipt</h1>
-      <p>Drag, pull, and stretch the receipt with mouse or touch.</p>
-      <p class="hint">Top edge is pinned. Physics runs in real time.</p>
-    </div>
+      <section class="layout">
+        <aside class="guide card">
+          <h2>New Thread Workflow</h2>
+          <ol>
+            <li>Create a new folder in <code>projects/&lt;slug&gt;/</code>.</li>
+            <li>Add <code>README.md</code>, <code>index.html</code>, <code>style.css</code>, and <code>script.js</code>.</li>
+            <li>Register the project in <code>projects/registry.json</code>.</li>
+            <li>Use the starter prompt from <code>THREAD_STARTER.md</code>.</li>
+          </ol>
+          <a class="ghost-link" href="THREAD_STARTER.md">Open starter prompt →</a>
+        </aside>
+
+        <section class="catalog card">
+          <div class="catalog-head">
+            <h2>Projects</h2>
+            <button id="refresh" type="button">Refresh</button>
+          </div>
+          <div id="project-grid" class="project-grid" aria-live="polite"></div>
+        </section>
+      </section>
+    </main>
+
+    <template id="project-card-template">
+      <article class="project-card">
+        <div class="row">
+          <h3 data-title></h3>
+          <span class="status" data-status></span>
+        </div>
+        <p data-description></p>
+        <div class="chips" data-tags></div>
+        <div class="links">
+          <a data-demo target="_blank" rel="noopener noreferrer">Open Demo</a>
+          <a data-source target="_blank" rel="noopener noreferrer">Open Folder</a>
+        </div>
+      </article>
+    </template>
 
     <script type="module" src="script.js"></script>
   </body>

@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #101012;
+  color: #f2f2f2;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+a { color: #baff2c; }
