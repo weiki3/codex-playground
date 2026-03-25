@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "name": "Navigation Portal",
+      "status": "active",
+      "description": "The command center for all vibe coding experiments. Keep this as the default landing page.",
+      "tags": [
+        "portal",
+        "system",
+        "ui"
+      ],
+      "demo": "./index.html",
+      "source": "./"
+    },
+    {
+      "name": "Receipt Cloth Demo",
+      "status": "active",
+      "description": "Interactive Three.js hanging receipt cloth simulation with drag-and-stretch physics.",
+      "tags": [
+        "threejs",
+        "physics",
+        "demo"
+      ],
+      "demo": "./projects/receipt-cloth-demo/index.html",
+      "source": "./projects/receipt-cloth-demo/"
+    },
+    {
+      "name": "Project Template",
+      "status": "ready",
+      "description": "Boilerplate location for spinning up a new thread/project without polluting the root.",
+      "tags": [
+        "template",
+        "starter",
+        "workflow"
+      ],
+      "demo": "./projects/_template/index.html",
+      "source": "./projects/_template/"
+    }
+  ]
+}
